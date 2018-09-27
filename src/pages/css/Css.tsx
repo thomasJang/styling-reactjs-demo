@@ -1,8 +1,10 @@
 import * as React from 'react';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import { hot } from 'react-hot-loader';
+
 import { NoMatch } from 'components';
 import { Login } from './container';
+import './styles.ts';
 
 class App extends React.Component<any> {
   render() {

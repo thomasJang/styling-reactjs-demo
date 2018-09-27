@@ -11,10 +11,10 @@ const Component = styled.div`
 
   background: linear-gradient(
     135deg,
-    var(--bgcolor1),
-    var(--bgcolor1),
-    var(--bgcolor2),
-    var(--bgcolor2)
+    var(--bgcolor),
+    var(--bgcolor),
+    var(--primary-color),
+    var(--primary-color)
   );
 `;
 

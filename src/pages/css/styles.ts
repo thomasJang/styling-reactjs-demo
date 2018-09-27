@@ -9,7 +9,7 @@ injectGlobal`
   
   :root{  
     --primary-color: #4654d5;
-    --secondary-color: #202761;
+    --secondary-color: #7d86f7;
     --info_color: #4654d5;
     --success_color: 52C41A;
     --processing_color: #4654d5;
@@ -19,8 +19,7 @@ injectGlobal`
     --normal-color: #d9d9d9;
     --text-color: #565f70;
     --link-color: #4654d5;
-    --bgcolor1: #ef00f2;
-    --bgcolor2: #0071f2;
+    --bgcolor: #ef00f2;
     --border-color-base: #eaeaec;
     --heading-font-family: 'Abril Fatface', cursive;
     

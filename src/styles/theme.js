@@ -1,6 +1,4 @@
 const theme = {
-  heading_font_family:
-    "'Chinese Quote', 'NanumSquareRound', 'Nunito Sans', Helvetica, Arial, sans-serif",
   primary_color: '#4654d5',
   secondary_color: '#202761',
   info_color: '#4654d5',
@@ -10,27 +8,10 @@ const theme = {
   highlight_color: '#F5222D',
   warning_color: '#FAAD14',
   normal_color: '#d9d9d9',
-  sidebarbg_color: '#2d3688',
-  title_color: '#2d3688',
-  text_color: '#565f70',
-  text_color_hover: '#141427',
-  text_color_active: '#141427',
-  text_color_secondary: '#7b8596',
-  text_color_secondary_hover: '#7b8596',
-  text_color_secondary_active: '#7b8596',
-  text_color_dark: '#fff',
-  text_color_dark_hover: '#38c0ff',
-  text_color_dark_active: '#38c0ff',
-  text_color_secondary_dark: '#9599bf',
-  text_color_secondary_dark_hover: '#38c0ff',
-  text_color_secondary_dark_active: '#38c0ff',
   link_color: '#4654d5',
-  heading_bgcolor: '#f4f7f9',
-  heading_bgcolor_dark: '#000',
+  bgcolor: '#ef00f2',
   border_color_base: '#eaeaec',
-  table_tr_even_bgcolor: '#f4f7f9',
-  searchbox_bgcolor: '#f3f3f3',
-  active_bgcolor: '#bec3f2',
+  heading_font_family: "'Abril Fatface', cursive",
 };
 
 // export default theme;

@@ -20,6 +20,7 @@ const Component = styled.div`
   .desc {
     font-size: 1em;
     font-weight: 600;
+    color: var(--primary-color);
   }
 `;
 

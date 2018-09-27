@@ -5,6 +5,8 @@ import { ThemeProvider, theme } from 'styledComponents';
 import { NoMatch } from 'components';
 import { Login } from './container';
 
+import 'styles/globals.ts';
+
 class App extends React.Component<any> {
   render() {
     return (

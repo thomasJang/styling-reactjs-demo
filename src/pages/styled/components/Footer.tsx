@@ -1,10 +1,14 @@
 import * as React from 'react';
-import { styled } from 'styledComponents';
+import { styled, invert, isDark } from 'styledComponents';
 
 const Component = styled.div`
   width: 100%;
   font-size: 0.8em;
-  color: ${p => p.theme.normal_color};
+  color: ${p => {
+    return isDark(p.theme.primary_color)
+      ? p.theme.normal_color
+      : invert(p.theme.normal_color);
+  }};
 
   [data-container] {
     height: 60px;

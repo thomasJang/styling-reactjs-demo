@@ -14,5 +14,7 @@ const theme = {
   heading_font_family: "'Abril Fatface', cursive",
 };
 
+theme.link_color = theme.primary_color;
+
 // export default theme;
 module.exports = theme;

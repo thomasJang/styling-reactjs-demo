@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { styled } from 'styledComponents';
+import { styled, darken, saturate, desaturate } from 'styledComponents';
 import { Header, LoginForm, Footer } from '../components';
 
 const Component = styled.div`
@@ -11,10 +11,10 @@ const Component = styled.div`
 
   background: linear-gradient(
     135deg,
-    ${p => p.theme.bgcolor},
+    ${p => saturate(p.theme.bgcolor, 0.5)},
     ${p => p.theme.bgcolor},
     ${p => p.theme.primary_color},
-    ${p => p.theme.primary_color}
+    ${p => darken(p.theme.primary_color, 0.5)}
   );
 `;
 

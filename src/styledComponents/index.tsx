@@ -11,3 +11,15 @@ const {
 } = styledComponents as ThemedStyledComponentsModule<typeof theme>;
 
 export { styled, ThemeProvider, withTheme, keyframes };
+
+export {
+  darken,
+  lighten,
+  saturate,
+  desaturate,
+  grayscale,
+  whiten,
+  blacken,
+  invert,
+  isDark
+} from './colorUtil';

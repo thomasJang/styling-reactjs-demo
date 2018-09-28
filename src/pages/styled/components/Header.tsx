@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { styled } from 'styledComponents';
+import { styled, darken } from 'styledComponents';
+import * as Color from 'color';
 import { Icon } from 'antd';
 
 const Component = styled.div`
@@ -13,14 +14,17 @@ const Component = styled.div`
 
   h1 {
     font-size: 1.5em;
-    color: ${p => p.theme.primary_color};
+    color: ${p =>
+      Color(p.theme.primary_color)
+        .darken(0.3)
+        .hex()};
     margin: 0;
     font-family: ${p => p.theme.heading_font_family};
   }
   .desc {
     font-size: 1em;
     font-weight: 600;
-    color: ${p => p.theme.primary_color};
+    color: ${p => darken(p.theme.primary_color, 0.3)};
   }
 `;
 

@@ -7,8 +7,12 @@
   "website": "",
   "author": "tom@axisj.com",
   "license": "MIT",
-  "keywords": ["styling react demo"],
-  "dependencies": {},
+  "keywords": [
+    "styling react demo"
+  ],
+  "dependencies": {
+    "@types/color": "^3.0.0"
+  },
   "devDependencies": {
     "@types/node": "^10.9.4",
     "@types/react": "^16.4.13",
@@ -41,8 +45,7 @@
     "typescript-styled-plugin": "^0.10.0"
   },
   "scripts": {
-    "start":
-      "npm run build-watch:less-var & react-app-rewired start --scripts-version react-scripts-ts",
+    "start": "npm run build-watch:less-var & react-app-rewired start --scripts-version react-scripts-ts",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "build-watch:less-var": "node ./script/generate-less-var.js"
   }

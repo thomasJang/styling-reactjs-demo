@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { styled } from 'styledComponents';
+import { styled, darken, lighten, desaturate } from 'styledComponents';
 import {
   Form,
   DatePicker,
@@ -31,7 +31,7 @@ const Component = styled.div`
     margin: 20px 0;
     h1 {
       font-family: ${p => p.theme.heading_font_family};
-      color: ${p => p.theme.primary_color};
+      color: ${p => darken(p.theme.primary_color)};
       margin-bottom: 5px;
       font-size: 36px;
     }
@@ -42,7 +42,7 @@ const Component = styled.div`
   }
   .ant-form-item-label {
     label {
-      color: ${p => p.theme.primary_color};
+      color: ${p => desaturate(p.theme.primary_color)};
       font-weight: bold;
     }
   }

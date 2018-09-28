@@ -80,11 +80,23 @@ interface IProps extends FormComponentProps {
   className?: string;
 }
 
+function getRandomInt(min: number, max: number) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
 class LoginForm extends React.Component<IProps> {
   handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple'];
+
+    document.body.style.setProperty(
+      '--primary-color',
+      colors[getRandomInt(0, 6)],
+    );
+
     this.props.form.validateFields((err: any, values: any) => {
-      console.log('Received values of form: ', values);
+      // console.log('Received values of form: ', values);
     });
   };
 

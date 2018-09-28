@@ -2,7 +2,7 @@ const theme = {
   primary_color: '#4654d5',
   secondary_color: '#202761',
   info_color: '#4654d5',
-  success_color: '52C41A',
+  success_color: '#52C41A',
   processing_color: '#4654d5',
   error_color: '#F5222D',
   highlight_color: '#F5222D',

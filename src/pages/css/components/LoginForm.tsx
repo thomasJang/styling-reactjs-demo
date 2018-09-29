@@ -16,12 +16,12 @@ import { FormComponentProps } from 'antd/lib/form';
 const Component = styled.div`
   width: 100%;
   [data-box] {
+    border: 1 solid var(--border-color-base);
+    background: linear-gradient(to top, var(--normal-color), #fff 20%);
     width: 90%;
     max-width: 500px;
     margin: 0 auto;
     padding: 20px 40px;
-    border: 1 solid var(--border-color-base);
-    background: linear-gradient(to top, var(--normal-color), #fff 20%);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     border-radius: 6px;
   }
@@ -103,7 +103,6 @@ class LoginForm extends React.Component<IProps> {
   render() {
     const { getFieldDecorator } = this.props.form;
 
-    //
     return (
       <Component>
         <div data-box>

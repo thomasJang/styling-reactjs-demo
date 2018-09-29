@@ -46,6 +46,7 @@ const addBeforeRule = (rulesSource, ruleMatcher, value) => {
 };
 
 module.exports = function(config, env) {
+  const theme = require('./src/styles/theme.js');
   const cssRule = findRule(config.module.rules, cssRuleMatcher);
 
   // sass
@@ -59,7 +60,12 @@ module.exports = function(config, env) {
   lessRule.test = /\.less$/;
   addAfterRule(lessRule, postcssLoaderMatcher, {
     loader: require.resolve('less-loader'),
-    options: { javascriptEnabled: true },
+    options: {
+      // modifyVars: {
+      //   '@primary-color': theme.primary_color,
+      // },
+      javascriptEnabled: true,
+    },
   });
   addBeforeRule(config.module.rules, fileLoaderMatcher, lessRule);
 

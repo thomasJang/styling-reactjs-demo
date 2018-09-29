@@ -69,8 +69,6 @@ class LoginForm extends React.Component<IProps> {
 
   render() {
     const { getFieldDecorator } = this.props.form;
-
-    //
     return (
       <Component>
         <div data-box>

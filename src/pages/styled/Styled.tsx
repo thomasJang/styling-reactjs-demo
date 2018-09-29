@@ -7,7 +7,9 @@ import { Login } from './container';
 
 import 'styles/globals.ts';
 
-class App extends React.Component<any> {
+interface IProps {}
+
+class App extends React.Component<IProps> {
   render() {
     return (
       <ThemeProvider theme={theme}>

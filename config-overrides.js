@@ -1,5 +1,16 @@
 const overrideJsTsLoader = require('./react-app-rewire-js-ts');
 const rewireCssModules = require('./react-app-rewire-css');
+const AntDesignThemePlugin = require('antd-theme-webpack-plugin');
+const path = require('path');
+const lessPluginOptions = {
+  stylesDir: path.join(__dirname, './src/styles/less'),
+  antDir: path.join(__dirname, './node_modules/antd'),
+  varFile: path.join(__dirname, './src/styles/less/theme-vars.less'),
+  mainLessFile: path.join(__dirname, './src/styles/less/index.less'),
+  themeVariables: ['@primary-color'],
+  indexFileName: 'index.html',
+  generateOnce: false, // generate color.less on each compilation
+};
 
 /* config-overrides.js */
 module.exports = function override(config, env) {
@@ -33,6 +44,8 @@ module.exports = function override(config, env) {
       .BundleAnalyzerPlugin;
     config.plugins.push(new BundleAnalyzerPlugin());
   }
+
+  // config.plugins.push(new AntDesignThemePlugin(lessPluginOptions));
 
   return config;
 };

@@ -1,4 +1,4 @@
-import * as theme from 'styles/theme.js';
+import theme from 'styles/theme';
 export { theme };
 
 import * as styledComponents from 'styled-components';
@@ -21,5 +21,5 @@ export {
   whiten,
   blacken,
   invert,
-  isDark
+  isDark,
 } from './colorUtil';

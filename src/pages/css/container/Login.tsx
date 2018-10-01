@@ -21,7 +21,6 @@ const Component = styled.div`
 interface IProps {}
 
 class Login extends React.Component<IProps> {
-
   render() {
     return (
       <Component>

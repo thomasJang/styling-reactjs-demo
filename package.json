@@ -30,6 +30,7 @@
     "less": "^2.7.3",
     "less-loader": "^4.1.0",
     "node-sass": "^4.8.3",
+    "npm-run-all": "^4.1.3",
     "react": "^16.4.0",
     "react-app-rewire-hot-loader": "^1.0.1",
     "react-app-rewired": "^1.6.2",
@@ -42,13 +43,15 @@
     "sass-loader": "^7.0.1",
     "styled-components": "^3.4.5",
     "styled-normalize": "^8.0.0",
+    "ts-node": "^7.0.1",
     "tslint-config-prettier": "^1.15.0",
     "typescript": "^3.0.3",
     "typescript-styled-plugin": "^0.10.0"
   },
   "scripts": {
-    "start": "npm run build-watch:less-var & react-app-rewired start --scripts-version react-scripts-ts",
+    "start": "npm-run-all -p build-watch:less-var build-watch:react",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
-    "build-watch:less-var": "node ./script/generate-less-var.js"
+    "build-watch:react": "react-app-rewired start --scripts-version react-scripts-ts",
+    "build-watch:less-var": "ts-node -P ./tsconfig.dev.json ./script/generate-less-var.ts"
   }
 }

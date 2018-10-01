@@ -17,4 +17,4 @@ const theme = {
 theme.link_color = theme.primary_color;
 
 // export default theme;
-module.exports = theme;
+export default theme;

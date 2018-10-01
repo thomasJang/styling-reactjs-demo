@@ -46,7 +46,6 @@ const addBeforeRule = (rulesSource, ruleMatcher, value) => {
 };
 
 module.exports = function(config, env) {
-  const theme = require('./src/styles/theme.js');
   const cssRule = findRule(config.module.rules, cssRuleMatcher);
 
   // sass

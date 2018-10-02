@@ -4,11 +4,10 @@ import { styled, invert, isDark } from 'styledComponents';
 const Component = styled.div`
   width: 100%;
   font-size: 0.8em;
-  color: ${p => {
-    return isDark(p.theme.primary_color)
+  color: ${p =>
+    isDark(p.theme.primary_color)
       ? p.theme.normal_color
-      : invert(p.theme.normal_color);
-  }};
+      : invert(p.theme.normal_color)};
 
   [data-container] {
     height: 60px;

@@ -8,7 +8,6 @@ const Component = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  transition: all 2s ease-in-out;
   background: linear-gradient(
     135deg,
     var(--bgcolor),

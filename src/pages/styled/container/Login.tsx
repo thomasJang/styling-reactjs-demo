@@ -9,10 +9,6 @@ const Component = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  color: ${p => {
-    return p.theme.primary_color;
-  }}
-
   background: linear-gradient(
     135deg,
     ${p => saturate(p.theme.bgcolor, 0.5)},

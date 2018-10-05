@@ -12,21 +12,13 @@ const Component = styled.div`
   }
 `;
 
-interface IProps {
-  className?: string;
-}
-
-class Footer extends React.Component<IProps> {
-  render() {
-    return (
-      <Component>
-        <div data-container>
-          BkHup Co-working space, Floor 3rd, A17 Ta Quang Buu, Bach Khoa, Hanoi
-          8:00 - 11:00 Sunday, Oct 14th, 2018
-        </div>
-      </Component>
-    );
-  }
-}
+const Footer: React.SFC<any> = () => (
+  <Component>
+    <div data-container>
+      BkHup Co-working space, Floor 3rd, A17 Ta Quang Buu, Bach Khoa, Hanoi 8:00
+      - 11:00 Sunday, Oct 14th, 2018
+    </div>
+  </Component>
+);
 
 export default Footer;

@@ -1,5 +1,5 @@
 const theme = {
-  primary_color: '#4654d5',
+  primary_color: '#4654d5', // darkred, pink, aqua
   secondary_color: '#202761',
   info_color: '#4654d5',
   success_color: '#52C41A',

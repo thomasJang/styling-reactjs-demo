@@ -10,7 +10,7 @@ const buildLessVar = () => {
   fs.writeFileSync(
     target,
     Object.keys(theme.default)
-      .map(k => `@${k.replace('_', '-')}: ${theme.default[k]};`)
+      .map(k => `@${k.replace(/_/g, '-')}: ${theme.default[k]};`)
       .join('\r\n'),
   );
 };
